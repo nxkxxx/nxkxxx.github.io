@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Neco', serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    min-height: 100vh;
+    background-color: #fdf126;
+}
+
+h2 {
+    position: relative;
+    font-size: 6em;
+    color: transparent;
+    -webkit-text-stroke: 2px #b3206d;
+    line-height: 1em;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+h2 span {
+    display: inline-flex;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    filter: drop-shadow(0 0 15px #b3206d);
+    -webkit-filter: drop-shadow(0 0 15px #b3206d);
+}
+
+h2 span:nth-child(even) {
+    overflow: hidden;
+    letter-spacing: -1em;
+}
+
+h2:hover~h2 span:nth-child(even),
+h2:hover span:nth-child(even) {
+    letter-spacing: 0;
+    color: #b3206d;
+}
